@@ -32,6 +32,8 @@ class App extends Component {
                     <div><h3>4</h3></div>
                 </Carousel>
             </Content>
+            <Footer>
+            </Footer>
         </Layout>
     );
   }
