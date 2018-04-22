@@ -45,5 +45,8 @@
 }
 
 .ant-carousel .slick-track{
-  height: 25.40em;
+    height: 100vh;
+}
+#section0{
+    background: #000;
 }
