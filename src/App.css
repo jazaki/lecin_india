@@ -29,6 +29,15 @@
 }
 */
 
+.nav-bar{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.ant-carousel{
+  overflow-y: hidden;
+}
 .ant-carousel .slick-slide {
   text-align: center;
   height: 160px;
@@ -40,13 +49,16 @@
   overflow: hidden;
 }
 
+
+
 .ant-carousel .slick-slide h3 {
   color: #fff;
 }
 
 .ant-carousel .slick-track{
-    height: 100vh;
+  height: 100vh;
 }
+
 #section0{
     background: #000;
 }
