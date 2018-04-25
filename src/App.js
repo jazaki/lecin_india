@@ -5,7 +5,7 @@ import 'fullpage.js/dist/jquery.fullpage.css'
 
 import './App.css';
 import 'antd/dist/antd.css';
-
+import cont_banner from './imgs/about.jpg'
 import { Layout, Menu, Carousel, Row, Col } from 'antd';
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -19,7 +19,7 @@ class App extends Component {
         $('#fullpage').fullpage({
             //Navigation
             menu: '#menu',
-            lockAnchors: true,
+            lockAnchors: false,
             anchors:['', 'about', 'programs', 'initiatives', 'news', 'contact_us'],
             navigation: false,
             navigationPosition: 'right',
@@ -63,9 +63,9 @@ class App extends Component {
 
             //Design
             controlArrows: true,
-            verticalCentered: true,
+            verticalCentered: false,
             sectionsColor : ['#ccc', '#fff', "#000"],
-            paddingTop: '0',
+            paddingTop: '0' ,
             paddingBottom: '0',
             fixedElements: '#header, .footer',
             responsiveWidth: 0,
@@ -116,8 +116,60 @@ class App extends Component {
                             <div><h3>4</h3></div>
                         </Carousel>
                     </div>
-                    <div className="section">
+                    <div className="section about">
+                        <Row>
+                            <Col xs={24} sm={24} lg={12} md={12} offset={2}>
+                                <img src={cont_banner}
+                                     style={{height: "20em", boxShadow: "2px 10px 33px 9px"}}/>
+                            </Col>
+                            <Col xs={24} sm={24} lg={8} md={8}>
+                                <Row>
+                                    <Col>
+                                        <span style={{fontSize: "48px"}}>
+                                            About Us
+                                        </span>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col>
+                                        <span style={{fontSize: "15px"}}>
+                                            Lorem Ipsum Dolor Sit Amet Consectur. Lorem Ipsum Dolor Sit Amet Consectur. Lorem Ipsum Dolor Sit Amet Consectur. Lorem Ipsum Dolor Sit Amet Consectur. Lorem Ipsum Dolor Sit Amet Consectur. Lorem Ipsum Dolor Sit Amet Consectur. Lorem Ipsum Dolor Sit Amet Consectur. Lorem Ipsum Dolor Sit Amet Consectur. Lorem Ipsum Dolor Sit Amet Consectur.
+                                        </span>
+                                    </Col>
+                                </Row>
 
+                                <Row style={{marginTop: "4em"}}>
+                                    <Col xs={24} sm={24} lg={12} md={12}>
+                                        <Row>
+                                            <Col>
+                                               <span style={{fontSize: "20px"}}>
+                                                    Mission
+                                                </span>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                Lorem Ipsum Dolor Sit Amet Consectur. Lorem Ipsum Dolor Sit Amet Consectur.
+                                            </Col>
+                                        </Row>
+                                    </Col>
+                                    <Col xs={24} sm={24} lg={12} md={12}>
+                                        <Row>
+                                            <Col>
+                                               <span style={{fontSize: "20px"}}>
+                                                    Vision
+                                                </span>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                Lorem Ipsum Dolor Sit Amet Consectur. Lorem Ipsum Dolor Sit Amet Consectur.
+                                            </Col>
+                                        </Row>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
                     </div>
                     <div className="section">
 

@@ -29,6 +29,7 @@
 }
 */
 
+
 .nav-bar{
   position: fixed;
   width: 100%;
@@ -59,6 +60,8 @@
   height: 100vh;
 }
 
-#section0{
-    background: #000;
+.about{
+  padding-top: 12em !important;
 }
+
+
