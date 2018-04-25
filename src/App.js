@@ -63,7 +63,7 @@ class App extends Component {
 
             //Design
             controlArrows: true,
-            verticalCentered: false,
+            verticalCentered: true,
             sectionsColor : ['#ccc', '#fff', "#000"],
             paddingTop: '0' ,
             paddingBottom: '0',
@@ -118,11 +118,11 @@ class App extends Component {
                     </div>
                     <div className="section about">
                         <Row>
-                            <Col xs={24} sm={24} lg={12} md={12} offset={2}>
+                            <Col xs={24} sm={24} lg={12} md={12} offset={3}>
                                 <img src={cont_banner}
-                                     style={{height: "20em", boxShadow: "2px 10px 33px 9px"}}/>
+                                     style={{height: "20em", boxShadow: "2px 10px 33px 9px #00000052"}}/>
                             </Col>
-                            <Col xs={24} sm={24} lg={8} md={8}>
+                            <Col xs={24} pull={2} sm={24} lg={8} md={8}>
                                 <Row>
                                     <Col>
                                         <span style={{fontSize: "48px"}}>
@@ -171,12 +171,8 @@ class App extends Component {
                             </Col>
                         </Row>
                     </div>
-                    <div className="section">
-
-                    </div>
-                    <div className="section">
-
-                    </div>
+                    <div className="section"></div>
+                    <div className="section"></div>
                 </div>
             </Content>
         </Layout>
